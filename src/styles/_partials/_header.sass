@@ -1,0 +1,79 @@
+.header
+	position: relative
+	padding-right: 1rem
+	+media-breakpoint-up(sm)
+		padding-right: 0rem
+	.info-header
+		width: 100%
+		+cangiua()
+		+maunen_radian()
+		padding: 0.2rem
+		border-bottom-left-radius: 15px
+		border-bottom-right-radius: 15px
+		a
+			color: white
+		.box2
+			border-left: 1px solid #ffffff
+		.box4
+			border-right: 1px solid #ffffff
+		+media-breakpoint-up(sm)
+			position: absolute
+			width: auto
+			right: 0
+			top: 0
+			padding: 0.3rem
+	nav.navbar
+		padding: 3rem 0 1rem 0
+		a.logohinh
+			position: absolute
+			z-index: 1238
+			top: -12px
+			left: 1rem
+			figure#octagon
+				padding: 1rem 2rem
+				+media-breakpoint-up(lg)
+					padding-top: 3.1rem
+				&:after
+					content: ""
+					position: absolute
+					bottom: 27px
+					// +media-breakpoint-up(sm)
+					// 	bottom: 52px
+					left: 0
+					width: 100%
+					height: 0
+					border-left: 25px solid transparent
+					border-right: 25px solid transparent
+					border-top: 11px solid #ffffff
+					z-index: -1
+		#navbarNavDropdown
+			text-align: center
+			padding-top: 2rem
+			ul.navbar-nav
+				li.nav-item
+					&:last-child
+						padding-right: 0
+					+media-breakpoint-up(sm)
+						padding-left: 2rem
+						&:last-child
+							padding-right: 0
+					a
+						color: black
+						font-weight: 400
+					+media-breakpoint-down(sm)
+						+maunen_radian()
+						a
+							color: #ffffff
+						&:hover
+							+maunen_radian_nguoc()
+							a
+								color: #ffffff
+					.dropdown-menu
+						text-align: center
+						+maunen_radian()
+						a
+							color: #ffffff
+							&:hover
+								+maunen_radian_nguoc()
+								a
+									color: #ffffff

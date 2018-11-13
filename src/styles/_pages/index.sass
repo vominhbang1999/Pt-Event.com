@@ -1,0 +1,77 @@
+.home-slider
+	.slider1
+		position: relative
+		.owl-nav
+			display: none
+			+media-breakpoint-down(sm)
+				display: block
+			.owl-next
+				+maunen_radian()
+				width: 50px
+				height: 30px
+				span
+					color: white
+					font-size: 20px
+			.owl-prev
+				+maunen_radian()
+				width: 50px
+				height: 30px
+				span
+					color: white
+					font-size: 20px
+		.owl-dots
+			display: block
+			position: absolute
+			top: 90%
+			width: 100%
+			.owl-dot
+				+media-breakpoint-down(sm)
+					display: none
+				span
+					background-color: #d6d6d600
+					border: 1px solid #ffffff
+				&.active, &:hover
+					span
+						background-color: #ffffff
+						box-shadow: 0px 0px 4px 5px #ffffff7a
+
+		.item
+			.text-slider
+				@media (max-width: 576px)
+					+maunen_radian()
+					color: white
+					text-align: center
+					padding: 1rem 0.5rem
+				@media (min-width: 576px)
+					position: absolute
+					top: 45%
+					left: 20%
+					.so0
+						color: white
+						font-size: 25px
+						@media (max-width: 700px)
+							font-size: 18px
+						max-width: 280px
+						.so1
+							font-size: 30px
+							@media (max-width: 700px)
+								font-size: 24px
+							font-weight: bold
+					a
+						color: white
+						+maunen_radian()
+						border: none
+						border-radius: 0
+						width: 40%
+						padding: 0.5rem
+						font-size: 13px
+					.so3
+						color: white
+						+media-breakpoint-down(sm)
+							color: black
+						font-size: 25px
+						max-width: 300px
+					.so4
+						color: white
+						font-size: 24px
+						max-width: 300px
