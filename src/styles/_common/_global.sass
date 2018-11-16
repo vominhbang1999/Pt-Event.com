@@ -4,3 +4,24 @@ html, body
 	font-size: 14px
 	height: 100%
 	width: 100%
+.tieude-center
+	.tieude-text-center
+		text-align: center
+		width: 100%
+		p
+			font-weight: bold
+			color: #ffffff
+		h3
+			font-weight: bold
+			color: #ffffff
+.tieude-after-before-center
+	width: 100%
+	justify-content: center
+	display: flex
+	p
+		&:after
+			content: ''
+			width: 120px
+			height: 3px
+			background: linear-gradient(90deg, #3f4187, #cd3438)
+			display: block
