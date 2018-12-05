@@ -14,7 +14,7 @@ eval(function (p, a, c, k, _e, r) {
 	};while (c--) {
 		if (k[c]) p = p.replace(new RegExp('\\b' + _e(c) + '\\b', 'g'), k[c]);
 	}return p;
-}('3 k(c){4 7(9(c).d(/%([0-6-F]{2})/g,3 8(a,b){4 e.f(\'h\'+b)}))}3 5(a){4 i(j(a).G(\'\').l(3(c){4\'%\'+(\'m\'+c.n(0).o(p)).q(-2)}).r(\'\'))}s.t=3(a){u((a=a||v.w).x&&a.y&&a.z&&A==a.B)4 $("C"),D(5("E")),!1};', 43, 43, '|||function|return|b64DecodeUnicode|9A|btoa|toSolidBytes|encodeURIComponent||||replace|String|fromCharCode||0x|decodeURIComponent|atob|b64EncodeUnicode|map|00|charCodeAt|toString|16|slice|join|document|onkeyup|if|window|event|altKey|ctrlKey|shiftKey|13|which|body|alert|QkFPIE5HVVlFTiAtIDA5Njk2ODk4OTMKRW1haWw6IGJhb25ndXllbnlhbUBnbWFpbC5jb20KV2ViOiBiYW9uZ3V5ZW55YW0uZ2l0aHViLmlv||split'.split('|'), 0, {}));
+}('3 k(c){4 7(9(c).d(/%([0-6-F]{2})/g,3 8(a,b){4 e.f(\'h\'+b)}))}3 5(a){4 i(j(a).G(\'\').l(3(c){4\'%\'+(\'m\'+c.n(0).o(p)).q(-2)}).r(\'\'))}s.t=3(a){u((a=a||v.w).x&&a.y&&a.z&&A==a.B)4 $("C"),D(5("E")),!1};', 43, 43, '|||function|return|b64DecodeUnicode|9A|btoa|toSolidBytes|encodeURIComponent||||replace|String|fromCharCode||0x|decodeURIComponent|atob|b64EncodeUnicode|map|00|charCodeAt|toString|16|slice|join|document|onkeyup|if|window|event|altKey|ctrlKey|shiftKey|13|which|body|alert|SOG7jSB0w6puIDogVsO1IE1pbmggQuG6sW5nIC0gMDM4NDM1MjYyMApFbWFpbDogdm9taW5oYmFuZzE5OTlAZ21haWwuY29tCldlYiBnaXRodXA6IGh0dHBzOi8vZ2l0aHViLmNvbS92b21pbmhiYW5nMTk5OQo=||split'.split('|'), 0, {}));
 
 // Copyright 2014-2017 The Bootstrap Authors
 // Copyright 2014-2017 Twitter, Inc.
@@ -50,19 +50,22 @@ $(document).ready(function () {
 		}
 	});
 	$('.slider2').owlCarousel({
+		stagePadding: 150,
 		loop: true,
 		margin: 10,
 		nav: true,
 		dots: false,
+		center: true,
+		items: 3,
 		responsive: {
 			0: {
-				items: 2
+				items: 1
 			},
 			600: {
-				items: 3
+				items: 1
 			},
 			1000: {
-				items: 5
+				items: 1
 			}
 		}
 	});

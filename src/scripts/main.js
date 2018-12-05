@@ -17,19 +17,22 @@ $(document).ready(function () {
 		}
 	})
 	$('.slider2').owlCarousel({
+		stagePadding: 150,
 		loop:true,
 		margin:10,
 		nav:true,
 		dots:false,
+		center: true,
+		items:3,
 		responsive:{
 			0:{
-				items:2
+				items:1
 			},
 			600:{
-				items:3
+				items:1
 			},
 			1000:{
-				items:5
+				items:1
 			}
 		}
 	})
